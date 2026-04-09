@@ -813,6 +813,14 @@
         </div>
 
         <div class="plugin-card">
+          <div class="plugin-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+          <p class="plugin-type" data-i18n="plug_type_geo">Dati geografici</p>
+          <h3>GeoNames</h3>
+          <p data-i18n="plug_geonames_body">Assegna coordinate GPS e gerarchia geografica precisa (Continente › Paese › Regione › Città) a milioni di luoghi tramite il database GeoNames. Sostituisce il motore builtin con precisione superiore su borghi e frazioni.</p>
+          <span class="plugin-badge" data-i18n="plug_badge_beta_access">Disponibile per beta tester</span>
+        </div>
+
+        <div class="plugin-card">
           <div class="plugin-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><path d="M5 17a5 5 0 0 1 5-5h4a4 4 0 0 1 0 8H8a3 3 0 0 1 0-6"/></svg></div>
           <p class="plugin-type" data-i18n="plug_type_geo">Dati geografici</p>
           <h3>NaturArea</h3>
@@ -955,11 +963,12 @@
       plug_ollama_body: "Collega OffGallery a Ollama per generare tag, titoli e descrizioni. Supporta modelli vision come Qwen3-VL, LLaVA, Gemma3. Accesso riservato ai beta tester.",
       plug_lmstudio_body: "Usa LM Studio come server LLM locale con interfaccia grafica. Ideale per gestire modelli vision quantizzati. Accesso riservato ai beta tester.",
       plug_bionomen_body: "Un airone cenerino identificato da BioCLIP diventa automaticamente \"grey heron\", \"héron cendré\", \"Graureiher\" — in tutti i sidecar XMP, offline. Dati GBIF bundled, taxa selezionabili dalla configurazione.",
+      plug_geonames_body: "Assegna coordinate GPS e gerarchia geografica precisa (Continente › Paese › Regione › Città) a milioni di luoghi tramite il database GeoNames. Sostituisce il motore builtin con precisione superiore su borghi e frazioni.",
       plug_natura_body: "Identifica l'area protetta (WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con GPS. Filtra per habitat o area protetta direttamente dalla ricerca.",
       plug_weather_body: "Recupera le condizioni meteo storiche allo scatto via Open-Meteo (temperatura, vento, pioggia, neve…). Le condizioni sono filtrabili dalla ricerca e visibili nelle imagecard della gallery.",
       plug_badge_beta_access: "Disponibile per beta tester",
       access_title: "Plugin disponibili su richiesta.",
-      access_body: "I plugin (LLM Vision, BioNomen, NaturArea, Weather Context) sono accessibili a chi usa OffGallery e vuole provarli. Scrivi per ricevere le istruzioni di installazione.",
+      access_body: "I plugin (LLM Vision, BioNomen, GeoNames, NaturArea, Weather Context) sono accessibili a chi usa OffGallery e vuole provarli. Scrivi per ricevere le istruzioni di installazione.",
       access_cta: "Scrivi per l'accesso",
       cta_title: "Vuoi sapere esattamente cosa fa?",
       cta_body: "Una pagina con ogni funzionalità documentata — modelli, formati, filtri di ricerca, metadati.",
@@ -1024,11 +1033,12 @@
       plug_ollama_body: "Connect OffGallery to Ollama for natural language tag, title and description generation. Supports vision models like Qwen3-VL, LLaVA, Gemma3. Access reserved for beta testers.",
       plug_lmstudio_body: "Use LM Studio as a local LLM server with a GUI. Ideal for managing quantized vision models. Access reserved for beta testers.",
       plug_bionomen_body: "A grey heron identified by BioCLIP automatically becomes \"airone cenerino\", \"héron cendré\", \"Graureiher\" — in all XMP sidecars, offline. GBIF data bundled, taxa selectable from configuration.",
+      plug_geonames_body: "Assigns GPS coordinates and precise geographic hierarchy (Continent › Country › Region › City) to millions of places using the GeoNames database. Replaces the built-in engine with superior accuracy for villages and hamlets.",
       plug_natura_body: "Identifies the protected area (WDPA/UNEP) and habitat type (ESA WorldCover) for each GPS-tagged photo. Filter by habitat or protected area directly from the search panel.",
       plug_weather_body: "Retrieves historical weather conditions at the time of the shot via Open-Meteo (temperature, wind, rain, snow…). Conditions are searchable from the search panel and visible on gallery image cards.",
       plug_badge_beta_access: "Available for beta testers",
       access_title: "Plugins available on request.",
-      access_body: "The plugins (LLM Vision, BioNomen, NaturArea, Weather Context) are available to OffGallery users who want to try them. Write to receive installation instructions.",
+      access_body: "The plugins (LLM Vision, BioNomen, GeoNames, NaturArea, Weather Context) are available to OffGallery users who want to try them. Write to receive installation instructions.",
       access_cta: "Write for access",
       cta_title: "Want to know exactly what it does?",
       cta_body: "A page with every feature documented — models, formats, search filters, metadata.",

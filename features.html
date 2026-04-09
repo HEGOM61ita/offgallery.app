@@ -703,6 +703,15 @@
             <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
           </div>
           <div class="plugin-detail-card">
+            <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <p class="plugin-type" data-i18n="pd_type_geo">Dati geografici</p>
+            <h3>GeoNames</h3>
+            <p data-i18n="pd_geo_1">Scarica e indicizza il database geografico GeoNames per le nazioni selezionate. Ricerca per nome o ricava la gerarchia da coordinate GPS con precisione superiore al motore builtin.</p>
+            <p data-i18n="pd_geo_2">Gerarchia prodotta: <code>GeOFF|Continente|Paese|Regione|Città</code>. Il foglio finale viene aggiunto automaticamente come tag. Dati ricercabili e filtrabili dalla Search Tab.</p>
+            <p data-i18n="pd_geo_3">Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~130.000 città). Con GeoNames: milioni di luoghi.</p>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+          </div>
+          <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><path d="M5 17a5 5 0 0 1 5-5h4a4 4 0 0 1 0 8H8a3 3 0 0 1 0-6"/></svg></div>
             <p class="plugin-type" data-i18n="pd_type_geo">Dati geografici</p>
             <h3>NaturArea</h3>
@@ -835,6 +844,9 @@
       pd_bio_1: "Arricchisce i tag di BioCLIP con i nomi comuni delle specie in più lingue. Un airone cenerino identificato da BioCLIP diventa automaticamente \"grey heron\", \"héron cendré\", \"Graureiher\" — nei sidecar XMP, offline.",
       pd_bio_2: "I dati provengono dal database GBIF, bundled localmente. Nessuna connessione internet richiesta dopo l'installazione.",
       pd_bio_3: "Indispensabile per fotografi wildlife, botanici e naturalisti che archiviano grandi volumi di foto con soggetti biologici identificati da BioCLIP.",
+      pd_geo_1: "Scarica e indicizza il database geografico GeoNames per le nazioni selezionate. Ricerca per nome o ricava la gerarchia da coordinate GPS con precisione superiore al motore builtin.",
+      pd_geo_2: "Gerarchia prodotta: GeOFF|Continente|Paese|Regione|Città. Il foglio finale viene aggiunto automaticamente come tag. Dati ricercabili e filtrabili dalla Search Tab.",
+      pd_geo_3: "Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~130.000 città). Con GeoNames: milioni di luoghi.",
       pd_natura_1: "Identifica l'area protetta (database WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con coordinate GPS. I dati vengono scritti nel DB e nei sidecar XMP.",
       pd_natura_2: "Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta cercata via API UNEP-WCMC con cache locale.",
       pd_natura_3: "Permette di filtrare le foto per area protetta o tipo di habitat direttamente dalla ricerca.",
@@ -917,6 +929,9 @@
       pd_bio_1: "Enriches BioCLIP tags with common species names in multiple languages. A grey heron identified by BioCLIP automatically becomes \"airone cenerino\", \"héron cendré\", \"Graureiher\" — in XMP sidecars, offline.",
       pd_bio_2: "Data comes from the GBIF database, bundled locally. No internet connection required after installation.",
       pd_bio_3: "Essential for wildlife, botanical and nature photographers archiving large volumes of photos with biological subjects identified by BioCLIP.",
+      pd_geo_1: "Downloads and indexes the GeoNames geographic database for selected countries. Search by name or derive a hierarchy from GPS coordinates with higher accuracy than the built-in engine.",
+      pd_geo_2: "Produced hierarchy: GeOFF|Continent|Country|Region|City. The leaf node is automatically added as a tag. Data is searchable and filterable from the Search Tab.",
+      pd_geo_3: "Essential for photographers shooting villages, hamlets and minor places not covered by the built-in engine (~130,000 cities). With GeoNames: millions of places.",
       pd_natura_1: "Identifies the protected area (WDPA/UNEP database) and habitat type (ESA WorldCover) for each photo with GPS coordinates. Data is written to the DB and XMP sidecars.",
       pd_natura_2: "Recognised habitats: forest, shrubland, grassland, cropland, urban, wetlands, water, snow and more. Protected area looked up via UNEP-WCMC API with local cache.",
       pd_natura_3: "Enables filtering photos by protected area or habitat type directly from the search panel.",
