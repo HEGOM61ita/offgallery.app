@@ -448,6 +448,73 @@
   </div>
 </div>
 
+<h3>Combined grid: Mode × Overwrite</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mode</th>
+      <th>Overwrite</th>
+      <th>Tags</th>
+      <th>Description</th>
+      <th>Title</th>
+      <th>Embeddings / BioCLIP / Scores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>New images only</strong></td>
+      <td>OFF</td>
+      <td>Merge (new tags only)</td>
+      <td>Skip if present</td>
+      <td>Skip if present</td>
+      <td rowspan="2">New images only</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Full replace</td>
+      <td>Always generate</td>
+      <td>Always generate</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>New + previous errors</strong></td>
+      <td>OFF</td>
+      <td>Merge (new tags only)</td>
+      <td>Skip if present</td>
+      <td>Skip if present</td>
+      <td rowspan="2">New or previously failed images only</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Full replace</td>
+      <td>Always generate</td>
+      <td>Always generate</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Reprocess all</strong></td>
+      <td>OFF</td>
+      <td>Merge (new tags only)</td>
+      <td>Skip if present</td>
+      <td>Skip if present</td>
+      <td rowspan="2">Always regenerated for all images</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Full replace</td>
+      <td>Always generate</td>
+      <td>Always generate</td>
+    </tr>
+    <tr>
+      <td><strong>Reprocess all + AI Gen. Only</strong></td>
+      <td>OFF / ON</td>
+      <td>Merge / Replace</td>
+      <td>Skip / Generate</td>
+      <td>Skip / Generate</td>
+      <td>Not touched (EXIF, embeddings, BioCLIP, scores skipped)</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="ai-gen-only">4.4 "AI Gen. Only" Mode</h2>
 
 <p>The <strong>AI Gen. Only</strong> checkbox appears beside "Reprocess all" when that mode is selected. Checking it activates a special mode that operates only on LLM generation.</p>
