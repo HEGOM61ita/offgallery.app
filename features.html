@@ -716,7 +716,7 @@
             <p class="plugin-type" data-i18n="pd_type_geo">Dati geografici</p>
             <h3>NaturArea</h3>
             <p data-i18n="pd_natura_1">Identifica l'area protetta (database WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con coordinate GPS. I dati vengono scritti nel DB e nei sidecar XMP.</p>
-            <p data-i18n="pd_natura_2">Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta cercata via API UNEP-WCMC con cache locale.</p>
+            <p data-i18n="pd_natura_2">Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta ricercata tramite database WDPA locale (~500 MB, scaricato una tantum) — nessuna API esterna.</p>
             <p data-i18n="pd_natura_3">Permette di filtrare le foto per area protetta o tipo di habitat direttamente dalla ricerca.</p>
             <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
           </div>
@@ -848,7 +848,7 @@
       pd_geo_2: "Gerarchia prodotta: GeOFF|Continente|Paese|Regione|Città. Il foglio finale viene aggiunto automaticamente come tag. Dati ricercabili e filtrabili dalla Search Tab.",
       pd_geo_3: "Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~130.000 città). Con GeoNames: milioni di luoghi.",
       pd_natura_1: "Identifica l'area protetta (database WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con coordinate GPS. I dati vengono scritti nel DB e nei sidecar XMP.",
-      pd_natura_2: "Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta cercata via API UNEP-WCMC con cache locale.",
+      pd_natura_2: "Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta ricercata tramite database WDPA locale (~500 MB, scaricato una tantum) — nessuna API esterna.",
       pd_natura_3: "Permette di filtrare le foto per area protetta o tipo di habitat direttamente dalla ricerca.",
       pd_weather_1: "Recupera le condizioni meteo storiche al momento dello scatto tramite Open-Meteo: temperatura, umidità, vento, precipitazioni e condizione generale (sereno, pioggia, neve…).",
       pd_weather_2: "Le condizioni meteo sono filtrabili dalla Search Tab (es. cerca tutte le foto scattate sotto la pioggia) e visibili nelle imagecard della gallery.",
@@ -933,7 +933,7 @@
       pd_geo_2: "Produced hierarchy: GeOFF|Continent|Country|Region|City. The leaf node is automatically added as a tag. Data is searchable and filterable from the Search Tab.",
       pd_geo_3: "Essential for photographers shooting villages, hamlets and minor places not covered by the built-in engine (~130,000 cities). With GeoNames: millions of places.",
       pd_natura_1: "Identifies the protected area (WDPA/UNEP database) and habitat type (ESA WorldCover) for each photo with GPS coordinates. Data is written to the DB and XMP sidecars.",
-      pd_natura_2: "Recognised habitats: forest, shrubland, grassland, cropland, urban, wetlands, water, snow and more. Protected area looked up via UNEP-WCMC API with local cache.",
+      pd_natura_2: "Recognised habitats: forest, shrubland, grassland, cropland, urban, wetlands, water, snow and more. Protected area searched via local WDPA database (~500 MB, downloaded once) — no external API.",
       pd_natura_3: "Enables filtering photos by protected area or habitat type directly from the search panel.",
       pd_weather_1: "Retrieves historical weather conditions at the time of the shot via Open-Meteo: temperature, humidity, wind, precipitation and general condition (clear, rain, snow…).",
       pd_weather_2: "Conditions are searchable from the Search Tab (e.g. find all photos taken in the rain) and visible on gallery image cards.",
