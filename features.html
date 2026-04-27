@@ -445,6 +445,15 @@
       <span class="sn-tip" data-i18n="nav_allfeatures">Tutte le funzionalità</span>
     </a>
 
+    <!-- Manuale utente -->
+    <a href="USER_MANUAL_IT.html" class="sidenav-item" id="sn-manual">
+      <svg viewBox="0 0 24 24">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </svg>
+      <span class="sn-tip" data-i18n="nav_manual">Manuale</span>
+    </a>
+
   </div>
 </nav>
 
@@ -785,6 +794,7 @@
       nav_home: "Home",
       nav_features: "Funzionalità", nav_plugins: "Plugin",
       nav_beta: "Accesso plugin", nav_allfeatures: "Tutte le feature",
+      nav_manual: "Manuale",
       back_home: "← Torna alla homepage",
       hero_download: "Scarica OffGallery",
       page_eyebrow: "AI · Metadati · Ricerca · Plugin",
@@ -870,6 +880,7 @@
       nav_home: "Home",
       nav_features: "Features", nav_plugins: "Plugins",
       nav_beta: "Plugin access", nav_allfeatures: "All features",
+      nav_manual: "Manual",
       back_home: "← Back to homepage",
       hero_download: "Download OffGallery",
       page_eyebrow: "AI · Metadata · Search · Plugins",
@@ -973,6 +984,9 @@
     newSvg.id = 'flagIcon';
     document.getElementById('flagIcon').replaceWith(newSvg);
     document.getElementById('langLabel').textContent = nextLang.toUpperCase();
+    // aggiorna link manuale alla lingua corrente
+    const manualLink = document.getElementById('sn-manual');
+    if (manualLink) manualLink.href = l === 'it' ? 'USER_MANUAL_IT.html' : 'USER_MANUAL_EN.html';
   }
   document.getElementById('langToggle').addEventListener('click', () => { lang = lang === 'it' ? 'en' : 'it'; applyLang(lang); });
 </script>
