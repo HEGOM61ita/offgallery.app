@@ -621,6 +621,73 @@
   </div>
 </div>
 
+<h3>Griglia combinata: Modalità × Sovrascrivi</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modalità</th>
+      <th>Sovrascrivi</th>
+      <th>Tag</th>
+      <th>Descrizione</th>
+      <th>Titolo</th>
+      <th>Embedding / BioCLIP / Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>Solo nuove immagini</strong></td>
+      <td>OFF</td>
+      <td>Merge (solo nuovi tag)</td>
+      <td>Skip se presente</td>
+      <td>Skip se presente</td>
+      <td rowspan="2">Solo per immagini nuove</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Replace totale</td>
+      <td>Genera sempre</td>
+      <td>Genera sempre</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Nuove + errori precedenti</strong></td>
+      <td>OFF</td>
+      <td>Merge (solo nuovi tag)</td>
+      <td>Skip se presente</td>
+      <td>Skip se presente</td>
+      <td rowspan="2">Solo per immagini nuove o con errori</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Replace totale</td>
+      <td>Genera sempre</td>
+      <td>Genera sempre</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Riprocessa tutte</strong></td>
+      <td>OFF</td>
+      <td>Merge (solo nuovi tag)</td>
+      <td>Skip se presente</td>
+      <td>Skip se presente</td>
+      <td rowspan="2">Sempre rigenerati su tutte le immagini</td>
+    </tr>
+    <tr>
+      <td>ON</td>
+      <td>Replace totale</td>
+      <td>Genera sempre</td>
+      <td>Genera sempre</td>
+    </tr>
+    <tr>
+      <td><strong>Riprocessa tutte + Solo Gen. AI</strong></td>
+      <td>OFF / ON</td>
+      <td>Merge / Replace</td>
+      <td>Skip / Genera</td>
+      <td>Skip / Genera</td>
+      <td>Non toccati (EXIF, embedding, BioCLIP, score saltati)</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="solo-gen-ai">4.4 Modalità "Solo Gen. AI"</h2>
 
 <p>Il checkbox <strong>Solo Gen. AI</strong> appare accanto a "Riprocessa tutte" quando questa modalità è selezionata. Spuntandolo si attiva una modalità speciale che agisce solo sulla generazione LLM.</p>
