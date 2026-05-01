@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OffGallery — Manuale Utente</title>
+<meta name="description" content="Manuale utente completo di OffGallery: catalogazione automatica di foto RAW con analisi semantica, embedding CLIP, ricerca intelligente e gestione offline.">
+<meta property="og:title" content="OffGallery — Manuale Utente">
+<meta property="og:description" content="Manuale utente completo di OffGallery: catalogazione automatica di foto RAW con analisi semantica, embedding CLIP, ricerca intelligente e gestione offline.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://offgallery.app/USER_MANUAL_IT.html">
+<link rel="canonical" href="https://offgallery.app/USER_MANUAL_IT.html">
+<link rel="alternate" hreflang="it" href="https://offgallery.app/USER_MANUAL_IT.html">
+<link rel="alternate" hreflang="en" href="https://offgallery.app/USER_MANUAL_EN.html">
+<link rel="alternate" hreflang="x-default" href="https://offgallery.app/USER_MANUAL_EN.html">
 <style>
   /* ===== FONT & BASE ===== */
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -556,8 +565,8 @@
       <td>Elabora le immagini nuove e riprova quelle che avevano dato errore in una sessione precedente.</td>
     </tr>
     <tr>
-      <td><strong>Riprocessa tutte</strong></td>
-      <td>Rianalizza tutte le immagini nella sorgente, anche quelle già nel database. Utile dopo aver aggiornato un modello o cambiato parametri. Attivando questa modalità appare il checkbox <strong>Solo Gen. AI</strong>: vedi <a href="#solo-gen-ai">§ 4.4</a>.</td>
+      <td><strong>Completa / Riprocessa tutte</strong></td>
+      <td>Elabora tutte le foto (nuove e catalogate). Con <strong>Sovrascrivi OFF</strong>: aggiunge solo i dati mancanti — ideale per completare un import interrotto o per applicare un modello che non era attivo la volta precedente. Con <strong>Sovrascrivi ON</strong>: ricalcola tutto da capo. Attivando questa modalità appare il checkbox <strong>Solo Gen. AI</strong>: vedi <a href="#solo-gen-ai">§ 4.4</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -573,7 +582,7 @@
     <tr><td><strong>Genera Descrizione</strong></td><td>Attiva la generazione di una descrizione narrativa</td></tr>
     <tr><td><strong>Genera Titolo</strong></td><td>Attiva la generazione di un titolo breve</td></tr>
     <tr><td><strong>Max tag</strong></td><td>Numero massimo di tag da generare (default: 10)</td></tr>
-    <tr><td><strong>Sovrascrivi</strong></td><td>Se spuntato, sovrascrive tag/descrizione/titolo esistenti. Se non spuntato: per i tag fa merge (aggiunge solo i nuovi); per descrizione e titolo salta se già presenti.</td></tr>
+    <tr><td><strong>Sovrascrivi</strong></td><td>Se selezionato, sovrascrive tag/descrizione/titolo esistenti. Se non selezionato: per i tag fa merge (aggiunge solo i nuovi); per descrizione e titolo salta se già presenti.</td></tr>
   </tbody>
 </table>
 
@@ -605,15 +614,18 @@
     </tr>
     <tr>
       <td><strong>Embedding CLIP/DINOv2</strong></td>
-      <td colspan="2">Sempre rigenerati se si usa "Riprocessa tutte". Non influenzati da Sovrascrivi.</td>
+      <td>Salta le foto che lo hanno già nel DB.</td>
+      <td>Ricalcola anche se già presente.</td>
     </tr>
     <tr>
       <td><strong>BioCLIP tassonomia</strong></td>
-      <td colspan="2">Sempre rigenerata se si usa "Riprocessa tutte". Non influenzata da Sovrascrivi.</td>
+      <td>Salta le foto che la hanno già nel DB.</td>
+      <td>Ricalcola anche se già presente.</td>
     </tr>
     <tr>
       <td><strong>Score estetico / tecnico</strong></td>
-      <td colspan="2">Sempre rigenerati se si usa "Riprocessa tutte". Non influenzati da Sovrascrivi.</td>
+      <td>Salta le foto che li hanno già nel DB.</td>
+      <td>Ricalcola anche se già presente.</td>
     </tr>
   </tbody>
 </table>
@@ -669,21 +681,22 @@
       <td>Genera sempre</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>Riprocessa tutte</strong></td>
+      <td rowspan="2"><strong>Completa / Riprocessa tutte</strong></td>
       <td>OFF</td>
       <td>Merge (solo nuovi tag)</td>
       <td>Skip se presente</td>
       <td>Skip se presente</td>
-      <td rowspan="2">Sempre rigenerati su tutte le immagini</td>
+      <td>Solo se mancanti nel DB</td>
     </tr>
     <tr>
       <td>ON</td>
       <td>Replace totale</td>
       <td>Genera sempre</td>
       <td>Genera sempre</td>
+      <td>Sempre rigenerati</td>
     </tr>
     <tr>
-      <td><strong>Riprocessa tutte + Solo Gen. AI</strong></td>
+      <td><strong>Completa / Riprocessa tutte + Solo Gen. AI</strong></td>
       <td>OFF / ON</td>
       <td>Merge / Replace</td>
       <td>Skip / Genera</td>

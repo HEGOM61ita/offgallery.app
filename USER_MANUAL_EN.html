@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OffGallery — User Manual</title>
+<meta name="description" content="Complete user manual for OffGallery: automatic RAW photo cataloging with semantic analysis, CLIP embeddings, intelligent search, and fully offline workflow.">
+<meta property="og:title" content="OffGallery — User Manual">
+<meta property="og:description" content="Complete user manual for OffGallery: automatic RAW photo cataloging with semantic analysis, CLIP embeddings, intelligent search, and fully offline workflow.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://offgallery.app/USER_MANUAL_EN.html">
+<link rel="canonical" href="https://offgallery.app/USER_MANUAL_EN.html">
+<link rel="alternate" hreflang="en" href="https://offgallery.app/USER_MANUAL_EN.html">
+<link rel="alternate" hreflang="it" href="https://offgallery.app/USER_MANUAL_IT.html">
+<link rel="alternate" hreflang="x-default" href="https://offgallery.app/USER_MANUAL_EN.html">
 <style>
   /* ===== FONT & BASE ===== */
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -383,8 +392,8 @@
       <td>Processes new images and retries those that encountered an error in a previous session.</td>
     </tr>
     <tr>
-      <td><strong>Reprocess all</strong></td>
-      <td>Re-analyses every image in the source, including those already in the database. Useful after updating a model or changing parameters. Selecting this mode reveals the <strong>AI Gen. Only</strong> checkbox: see <a href="#ai-gen-only">§ 4.4</a>.</td>
+      <td><strong>Complete / Reprocess all</strong></td>
+      <td>Processes all photos (new and already catalogued). With <strong>Overwrite OFF</strong>: adds only missing data — ideal for completing an interrupted import or applying a model that was not active last time. With <strong>Overwrite ON</strong>: recalculates everything from scratch. Selecting this mode reveals the <strong>AI Gen. Only</strong> checkbox: see <a href="#ai-gen-only">§ 4.4</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -400,7 +409,7 @@
     <tr><td><strong>Generate Description</strong></td><td>Enable narrative description generation</td><td>On</td></tr>
     <tr><td><strong>Generate Title</strong></td><td>Enable short title generation</td><td>On</td></tr>
     <tr><td><strong>Max tags</strong></td><td>Maximum number of tags to generate</td><td>10</td></tr>
-    <tr><td><strong>Overwrite</strong></td><td>If checked, overwrites existing tags/description/title. If unchecked: tags are merged (only new ones added); description and title are skipped if already present.</td><td>Off</td></tr>
+    <tr><td><strong>Overwrite</strong></td><td>If selected, overwrites existing tags/description/title. If not selected: tags are merged (only new ones added); description and title are skipped if already present.</td><td>Off</td></tr>
   </tbody>
 </table>
 
@@ -432,15 +441,18 @@
     </tr>
     <tr>
       <td><strong>CLIP/DINOv2 embeddings</strong></td>
-      <td colspan="2">Always regenerated when using "Reprocess all". Not affected by Overwrite.</td>
+      <td>Skips photos that already have it in the DB.</td>
+      <td>Recalculates even if already present.</td>
     </tr>
     <tr>
       <td><strong>BioCLIP taxonomy</strong></td>
-      <td colspan="2">Always regenerated when using "Reprocess all". Not affected by Overwrite.</td>
+      <td>Skips photos that already have it in the DB.</td>
+      <td>Recalculates even if already present.</td>
     </tr>
     <tr>
       <td><strong>Aesthetic / technical scores</strong></td>
-      <td colspan="2">Always regenerated when using "Reprocess all". Not affected by Overwrite.</td>
+      <td>Skips photos that already have them in the DB.</td>
+      <td>Recalculates even if already present.</td>
     </tr>
   </tbody>
 </table>
@@ -496,21 +508,22 @@
       <td>Always generate</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>Reprocess all</strong></td>
+      <td rowspan="2"><strong>Complete / Reprocess all</strong></td>
       <td>OFF</td>
       <td>Merge (new tags only)</td>
       <td>Skip if present</td>
       <td>Skip if present</td>
-      <td rowspan="2">Always regenerated for all images</td>
+      <td>Only if missing from DB</td>
     </tr>
     <tr>
       <td>ON</td>
       <td>Full replace</td>
       <td>Always generate</td>
       <td>Always generate</td>
+      <td>Always regenerated</td>
     </tr>
     <tr>
-      <td><strong>Reprocess all + AI Gen. Only</strong></td>
+      <td><strong>Complete / Reprocess all + AI Gen. Only</strong></td>
       <td>OFF / ON</td>
       <td>Merge / Replace</td>
       <td>Skip / Generate</td>
