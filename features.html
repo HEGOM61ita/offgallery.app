@@ -452,7 +452,7 @@
       <svg viewBox="0 0 24 24">
         <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
       </svg>
-      <span class="sn-tip" data-i18n="nav_beta">Accesso plugin</span>
+      <span class="sn-tip" data-i18n="nav_beta">Plugin</span>
     </a>
 
     <!-- Tutte le funzionalità — active su questa pagina -->
@@ -596,7 +596,7 @@
             </div>
             <div class="feat-kicker" data-i18n="inst_prof_kicker">Profili di installazione</div>
             <h3 data-i18n="inst_prof_title">Leggero, Completo o Personalizzato</h3>
-            <p data-i18n="inst_prof_body">Il wizard propone tre profili: <strong>Leggero</strong> (~14 GB — CLIP, DINOv2, Aesthetic, BioCLIP, Argos, senza Ollama), <strong>Completo</strong> (~20 GB — tutto + Ollama + qwen3-vl:8b) e <strong>Personalizzato</strong> con checkbox per ogni componente. Rilevamento GPU automatico: NVIDIA CUDA, AMD DirectML o CPU-only.</p>
+            <p data-i18n="inst_prof_body">Il wizard propone tre profili: <strong>Leggero</strong> (~14 GB — SigLIP, DINOv2, Aesthetic, BioCLIP, Argos, senza Ollama), <strong>Completo</strong> (~18 GB — tutto + Ollama + qwen3-vl:8b) e <strong>Personalizzato</strong> con checkbox per ogni componente. Rilevamento GPU automatico: NVIDIA CUDA, AMD DirectML o CPU-only.</p>
           </div>
 
         </div>
@@ -687,7 +687,7 @@
             <div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div class="feat-kicker">GeOFF</div>
             <h3 data-i18n="m4_title">Geolocalizzazione offline</h3>
-            <p data-i18n="m4_body">Le coordinate GPS diventano una gerarchia geografica leggibile (Continente › Paese › Regione › Città) senza API esterne. I dati GeoNames (~130.000 città) sono bundled nel software. Il risultato è ricercabile e filtrabile dalla search tab.</p>
+            <p data-i18n="m4_body">Le coordinate GPS diventano una gerarchia geografica leggibile (Continente › Paese › Regione › Città) senza API esterne. I dati GeoNames (~145.000 città) sono bundled nel software. Il risultato è ricercabile e filtrabile dalla search tab.</p>
           </div>
           <div class="feat-card">
             <div class="feat-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
@@ -773,7 +773,7 @@
               <strong data-i18n="pd_models_label">Modelli consigliati</strong>
               Qwen3-VL-4B, LLaVA 1.6, Gemma3-4B-vision, MiniCPM-V
             </div>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="2"/></svg></div>
@@ -786,7 +786,7 @@
               Qwen3-VL (qualsiasi dimensione), modelli GGUF vision compatibili
             </div>
             <p style="font-size:0.78rem; color:var(--text-soft); margin-top:4px;" data-i18n="pd_lms_credit">Plugin di Riccardo Merlotti</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
@@ -795,7 +795,7 @@
             <p data-i18n="pd_bio_1">Arricchisce i tag di BioCLIP con i nomi comuni delle specie in più lingue. Un airone cenerino identificato da BioCLIP diventa automaticamente "grey heron", "héron cendré", "Graureiher" — nei sidecar XMP, offline.</p>
             <p data-i18n="pd_bio_2">I dati provengono dal database GBIF, bundled localmente. Nessuna connessione internet richiesta dopo l'installazione.</p>
             <p data-i18n="pd_bio_3">Indispensabile per fotografi wildlife, botanici e naturalisti che archiviano grandi volumi di foto con soggetti biologici identificati da BioCLIP.</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
@@ -803,8 +803,16 @@
             <h3>GeoNames</h3>
             <p data-i18n="pd_geo_1">Scarica e indicizza il database geografico GeoNames per le nazioni selezionate. Ricerca per nome o ricava la gerarchia da coordinate GPS con precisione superiore al motore builtin.</p>
             <p data-i18n="pd_geo_2">Gerarchia prodotta: <code>GeOFF|Continente|Paese|Regione|Città</code>. Il foglio finale viene aggiunto automaticamente come tag. Dati ricercabili e filtrabili dalla Search Tab.</p>
-            <p data-i18n="pd_geo_3">Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~130.000 città). Con GeoNames: milioni di luoghi.</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <p data-i18n="pd_geo_3">Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~145.000 città). Con GeoNames: milioni di luoghi.</p>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
+          </div>
+          <div class="plugin-detail-card">
+            <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <p class="plugin-type" data-i18n="pd_type_geo">Dati geografici</p>
+            <h3>GeoSpecies</h3>
+            <p data-i18n="pd_geosp_1">Affina la classificazione BioCLIP usando solo le specie attese nella posizione GPS della foto.</p>
+            <p data-i18n="pd_geosp_2">Restringe il campo da ~450.000 specie globali a un sottoinsieme geografico pertinente, aumentando la precisione tassonomica. Checklist scaricate da GBIF, poi usate offline.</p>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><path d="M5 17a5 5 0 0 1 5-5h4a4 4 0 0 1 0 8H8a3 3 0 0 1 0-6"/></svg></div>
@@ -813,7 +821,7 @@
             <p data-i18n="pd_natura_1">Identifica l'area protetta (database WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con coordinate GPS. I dati vengono scritti nel DB e nei sidecar XMP.</p>
             <p data-i18n="pd_natura_2">Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta ricercata tramite database WDPA locale (~500 MB, scaricato una tantum) — nessuna API esterna.</p>
             <p data-i18n="pd_natura_3">Permette di filtrare le foto per area protetta o tipo di habitat direttamente dalla ricerca.</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 1 0 0-9H17A7 7 0 1 0 6 17.7"/><path d="M12 13v8M9 18l3 3 3-3"/></svg></div>
@@ -822,7 +830,7 @@
             <p data-i18n="pd_weather_1">Recupera le condizioni meteo storiche al momento dello scatto tramite Open-Meteo: temperatura, umidità, vento, precipitazioni e condizione generale (sereno, pioggia, neve…).</p>
             <p data-i18n="pd_weather_2">Le condizioni meteo sono filtrabili dalla Search Tab (es. cerca tutte le foto scattate sotto la pioggia) e visibili nelle imagecard della gallery.</p>
             <p data-i18n="pd_weather_3">Richiede connessione internet al momento dell'esecuzione per interrogare l'API Open-Meteo (gratuita, no chiave). Cache locale per evitare chiamate ripetute.</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
           <div class="plugin-detail-card">
             <div class="plugin-detail-icon"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
@@ -831,7 +839,7 @@
             <p data-i18n="pd_prompt_1">Inietta un blocco CONTEXT personalizzato nel prompt Vision-Language per orientare il modello verso il dominio fotografico specifico dell'archivio. Senza un preset attivo il comportamento è identico al prompt standard.</p>
             <p data-i18n="pd_prompt_2">Preset built-in: Archivio Naturalistico, Paesaggio e Territorio, Astrofotografia, Macro Scientifico, Subacqueo, Reportage, Commerciale, Street e Urbano. Il modello LLM locale può generare preset personalizzati direttamente dall'interfaccia.</p>
             <p data-i18n="pd_prompt_3">Il preset attivo è selezionabile anche per singola elaborazione dal menu contestuale della gallery, senza modificare il preset globale.</p>
-            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Disponibile per beta tester</span>
+            <span class="plugin-badge beta" data-i18n="pd_badge_beta_tester">Plugin gratuito</span>
           </div>
         </div>
       </div>
@@ -870,10 +878,10 @@
           <a href="https://github.com/HEGOM61ita/OffGallery" data-i18n="f_github">GitHub</a>
           <a href="USER_MANUAL_IT.html" id="footer-manual-link" data-i18n="f_manual">Manuale utente</a>
           <a href="credits.html" data-i18n="f_credits">Crediti</a>
-          <a href="index.html#beta" data-i18n="f_beta">Accesso plugin</a>
+          <a href="index.html#beta" data-i18n="f_beta">Plugin</a>
           <a href="mailto:OffGallery.AI.info@gmail.com" data-i18n="f_contact">Contatto</a>
         </div>
-        <p class="footer-legal">© 2025 OffGallery — <span data-i18n="f_license">Licenza AGPLv3 — Software libero</span></p>
+        <p class="footer-legal">© 2024–2026 OffGallery — <span data-i18n="f_license">Licenza AGPLv3 — Software libero</span></p>
       </div>
       <div class="footer-donate">
         <p class="footer-donate-label" data-i18n="donate_label">Supporta il progetto</p>
@@ -893,7 +901,7 @@
       brand_subtitle: "Catalogazione fotografica con AI locale",
       nav_home: "Home",
       nav_features: "Funzionalità", nav_plugins: "Plugin",
-      nav_beta: "Accesso plugin", nav_allfeatures: "Tutte le feature",
+      nav_beta: "Plugin", nav_allfeatures: "Tutte le feature",
       nav_manual: "Manuale",
       back_home: "← Torna alla homepage",
       hero_download: "Scarica OffGallery",
@@ -922,7 +930,7 @@
       inst_mac_tag: "Wizard grafico in sviluppo",
       inst_prof_kicker: "Profili di installazione",
       inst_prof_title: "Leggero, Completo o Personalizzato",
-      inst_prof_body: "Il wizard propone tre profili: <strong>Leggero</strong> (~14 GB — SigLIP, DINOv2, Aesthetic, BioCLIP, Argos, senza Ollama), <strong>Completo</strong> (~20 GB — tutto + Ollama + qwen3-vl:8b) e <strong>Personalizzato</strong> con checkbox per ogni componente. Rilevamento GPU automatico: NVIDIA CUDA, AMD DirectML o CPU-only.",
+      inst_prof_body: "Il wizard propone tre profili: <strong>Leggero</strong> (~14 GB — SigLIP, DINOv2, Aesthetic, BioCLIP, Argos, senza Ollama), <strong>Completo</strong> (~18 GB — tutto + Ollama + qwen3-vl:8b) e <strong>Personalizzato</strong> con checkbox per ogni componente. Rilevamento GPU automatico: NVIDIA CUDA, AMD DirectML o CPU-only.",
       cta_btn_win: "⬇ OffGallerySetup.exe — Windows",
       cta_btn_linux: "⬇ OffGallerySetup — Linux",
       cta_btn_other: "⬇ macOS — ZIP + script",
@@ -949,7 +957,7 @@
       m3_title: "Estrazione EXIF completa",
       m3_body: "ExifTool estrae oltre 200 campi EXIF/IPTC/XMP: fotocamera, obiettivo, ISO, apertura, velocità, dati GPS, copyright, flash. Ricercabili e filtrabili dalla search tab.",
       m4_title: "Geolocalizzazione offline",
-      m4_body: "Le coordinate GPS diventano una gerarchia geografica leggibile (Continente › Paese › Regione › Città) senza API esterne. I dati GeoNames (~130.000 città) sono bundled nel software. Il risultato è ricercabile e filtrabile dalla search tab.",
+      m4_body: "Le coordinate GPS diventano una gerarchia geografica leggibile (Continente › Paese › Regione › Città) senza API esterne. I dati GeoNames (~145.000 città) sono bundled nel software. Il risultato è ricercabile e filtrabile dalla search tab.",
       m5_kicker: "Statistiche", m5_title: "Statistiche archivio",
       m5_body: "Stats tab con distribuzione per fotocamera, obiettivo, ISO, apertura, velocità otturatore, rating e label colore. Panoramica quantitativa del proprio archivio.",
       m6_title: "Export CSV",
@@ -981,7 +989,9 @@
       pd_bio_3: "Indispensabile per fotografi wildlife, botanici e naturalisti che archiviano grandi volumi di foto con soggetti biologici identificati da BioCLIP.",
       pd_geo_1: "Scarica e indicizza il database geografico GeoNames per le nazioni selezionate. Ricerca per nome o ricava la gerarchia da coordinate GPS con precisione superiore al motore builtin.",
       pd_geo_2: "Gerarchia prodotta: GeOFF|Continente|Paese|Regione|Città. Il foglio finale viene aggiunto automaticamente come tag. Dati ricercabili e filtrabili dalla Search Tab.",
-      pd_geo_3: "Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~130.000 città). Con GeoNames: milioni di luoghi.",
+      pd_geo_3: "Indispensabile per chi fotografa borghi, frazioni e luoghi minori non coperti dalla geolocalizzazione builtin (~145.000 città). Con GeoNames: milioni di luoghi.",
+      pd_geosp_1: "Affina la classificazione BioCLIP usando solo le specie attese nella posizione GPS della foto.",
+      pd_geosp_2: "Restringe il campo da ~450.000 specie globali a un sottoinsieme geografico pertinente, aumentando la precisione tassonomica. Checklist scaricate da GBIF, poi usate offline.",
       pd_natura_1: "Identifica l'area protetta (database WDPA/UNEP) e il tipo di habitat (ESA WorldCover) per ogni foto con coordinate GPS. I dati vengono scritti nel DB e nei sidecar XMP.",
       pd_natura_2: "Habitat riconosciuti: bosco, macchia, prato, coltivato, urbano, zone umide, acqua, neve e altro. Area protetta ricercata tramite database WDPA locale (~500 MB, scaricato una tantum) — nessuna API esterna.",
       pd_natura_3: "Permette di filtrare le foto per area protetta o tipo di habitat direttamente dalla ricerca.",
@@ -992,11 +1002,11 @@
       pd_prompt_2: "Preset built-in: Archivio Naturalistico, Paesaggio e Territorio, Astrofotografia, Macro Scientifico, Subacqueo, Reportage, Commerciale, Street e Urbano. Il modello LLM locale può generare preset personalizzati direttamente dall'interfaccia.",
       pd_prompt_3: "Il preset attivo è selezionabile anche per singola elaborazione dal menu contestuale della gallery, senza modificare il preset globale.",
       pd_models_label: "Modelli consigliati",
-      pd_badge_beta_tester: "Disponibile per beta tester",
+      pd_badge_beta_tester: "Plugin gratuito",
       cta_title: "Scarica e inizia.",
       cta_body: "Scarica OffGallery e porta la tua catalogazione fotografica in locale.",
       f_home: "Homepage", f_github: "GitHub", f_manual: "Manuale utente",
-      f_credits: "Crediti", f_beta: "Accesso plugin", f_contact: "Contatto",
+      f_credits: "Crediti", f_beta: "Plugin", f_contact: "Contatto",
       nav_credits: "Crediti",
       f_license: "Licenza AGPLv3 — Software libero",
       footer_desc: "Catalogazione fotografica intelligente, offline e privata. Open source, AGPLv3.",
@@ -1008,7 +1018,7 @@
       brand_subtitle: "Photo cataloging with local AI",
       nav_home: "Home",
       nav_features: "Features", nav_plugins: "Plugins",
-      nav_beta: "Plugin access", nav_allfeatures: "All features",
+      nav_beta: "Plugins", nav_allfeatures: "All features",
       nav_manual: "Manual", nav_credits: "Credits",
       back_home: "← Back to homepage",
       hero_download: "Download OffGallery",
@@ -1037,7 +1047,7 @@
       inst_mac_tag: "Graphical wizard in development",
       inst_prof_kicker: "Installation profiles",
       inst_prof_title: "Lightweight, Full or Custom",
-      inst_prof_body: "The wizard offers three profiles: <strong>Lightweight</strong> (~14 GB — CLIP, DINOv2, Aesthetic, BioCLIP, Argos, no Ollama), <strong>Full</strong> (~20 GB — everything + Ollama + qwen3-vl:8b) and <strong>Custom</strong> with a checkbox for each component. Automatic GPU detection: NVIDIA CUDA, AMD DirectML or CPU-only.",
+      inst_prof_body: "The wizard offers three profiles: <strong>Lightweight</strong> (~14 GB — SigLIP, DINOv2, Aesthetic, BioCLIP, Argos, no Ollama), <strong>Full</strong> (~18 GB — everything + Ollama + qwen3-vl:8b) and <strong>Custom</strong> with a checkbox for each component. Automatic GPU detection: NVIDIA CUDA, AMD DirectML or CPU-only.",
       cta_btn_win: "⬇ OffGallerySetup.exe — Windows",
       cta_btn_linux: "⬇ OffGallerySetup — Linux",
       cta_btn_other: "⬇ macOS — ZIP + script",
@@ -1064,7 +1074,7 @@
       m3_title: "Full EXIF extraction",
       m3_body: "ExifTool extracts over 200 EXIF/IPTC/XMP fields: camera, lens, ISO, aperture, speed, GPS data, copyright, flash. Searchable and filterable from the search tab.",
       m4_title: "Offline geolocation",
-      m4_body: "GPS coordinates become a readable geographic hierarchy (Continent › Country › Region › City) without external APIs. GeoNames data (~130,000 cities) is bundled in the software. The result is searchable and filterable from the search tab.",
+      m4_body: "GPS coordinates become a readable geographic hierarchy (Continent › Country › Region › City) without external APIs. GeoNames data (~145,000 cities) is bundled in the software. The result is searchable and filterable from the search tab.",
       m5_kicker: "Stats", m5_title: "Archive statistics",
       m5_body: "Stats tab with distribution by camera, lens, ISO, aperture, shutter speed, rating and color label. Quantitative overview of your photographic archive.",
       m6_title: "CSV export",
@@ -1096,7 +1106,9 @@
       pd_bio_3: "Essential for wildlife, botanical and nature photographers archiving large volumes of photos with biological subjects identified by BioCLIP.",
       pd_geo_1: "Downloads and indexes the GeoNames geographic database for selected countries. Search by name or derive a hierarchy from GPS coordinates with higher accuracy than the built-in engine.",
       pd_geo_2: "Produced hierarchy: GeOFF|Continent|Country|Region|City. The leaf node is automatically added as a tag. Data is searchable and filterable from the Search Tab.",
-      pd_geo_3: "Essential for photographers shooting villages, hamlets and minor places not covered by the built-in engine (~130,000 cities). With GeoNames: millions of places.",
+      pd_geo_3: "Essential for photographers shooting villages, hamlets and minor places not covered by the built-in engine (~145,000 cities). With GeoNames: millions of places.",
+      pd_geosp_1: "Refines BioCLIP classification using only the species expected at the photo's GPS location.",
+      pd_geosp_2: "Narrows the field from ~450,000 global species to a relevant geographic subset, increasing taxonomic accuracy. Checklists downloaded from GBIF, then used offline.",
       pd_natura_1: "Identifies the protected area (WDPA/UNEP database) and habitat type (ESA WorldCover) for each photo with GPS coordinates. Data is written to the DB and XMP sidecars.",
       pd_natura_2: "Recognised habitats: forest, shrubland, grassland, cropland, urban, wetlands, water, snow and more. Protected area searched via local WDPA database (~500 MB, downloaded once) — no external API.",
       pd_natura_3: "Enables filtering photos by protected area or habitat type directly from the search panel.",
@@ -1107,11 +1119,11 @@
       pd_prompt_2: "Built-in presets: Nature Archive, Landscape & Territory, Astrophotography, Scientific Macro, Underwater, Reportage, Commercial, Street & Urban. The local LLM model can generate custom presets directly from the interface.",
       pd_prompt_3: "The active preset can also be overridden per-run from the gallery context menu, without changing the global preset.",
       pd_models_label: "Recommended models",
-      pd_badge_beta_tester: "Available for beta testers",
+      pd_badge_beta_tester: "Free plugin",
       cta_title: "Download and start.",
       cta_body: "Download OffGallery and bring your photo cataloging in-house.",
       f_home: "Homepage", f_github: "GitHub", f_manual: "User manual",
-      f_credits: "Credits", f_beta: "Plugin access", f_contact: "Contact",
+      f_credits: "Credits", f_beta: "Plugins", f_contact: "Contact",
       f_license: "AGPLv3 License — Free software",
       footer_desc: "Intelligent photo cataloging, offline and private. Open source, AGPLv3.",
       donate_label: "Support the project",
