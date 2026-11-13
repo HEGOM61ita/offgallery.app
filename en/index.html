@@ -666,6 +666,22 @@
       .brand-badge img { height: 52px; }
       .hero-actions .btn, .nav-actions .btn { width: 100%; }
     }
+
+    /* ── BANNER + CLIP DEMO ── */
+    .hero-banner { width: 100%; background: #071b49; line-height: 0; }
+    .hero-banner img { width: 100%; height: auto; display: block; }
+    .hero-demo {
+      margin: 26px 0 0; max-width: 760px; border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--line); box-shadow: var(--shadow-md); background: #071b49; line-height: 0;
+    }
+    .hero-demo video { width: 100%; height: auto; display: block; }
+    .demo-video { width: 100%; height: 100%; object-fit: cover; display: block; background: #0b1020; }
+    .demo-video.contain { object-fit: contain; }
+    .plugins-demo {
+      margin: 0 0 28px; max-width: 880px; border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--line); box-shadow: var(--shadow-md); background: #0b1020; line-height: 0;
+    }
+    .plugins-demo video { width: 100%; height: auto; display: block; }
   </style>
 </head>
 <body>
@@ -775,6 +791,12 @@
 
 <!-- ── HERO ── -->
 <main>
+  <div class="hero-banner">
+    <picture>
+      <source srcset="../assets/hero-banner.webp" type="image/webp" />
+      <img src="../assets/hero-banner.jpg" width="3200" height="840" alt="OffGallery: from real-life photos, through the camera, to an archive organised by AI on your computer" fetchpriority="high" />
+    </picture>
+  </div>
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
@@ -786,8 +808,11 @@
         </div>
 
         <h1 data-i18n="hero_title">Your archive.<br /><span class="accent">Your AI.</span><br />Zero cloud.</h1>
-        <p class="hero-lead" data-i18n="hero_sub">Describe the photo you are looking for and OffGallery finds it: “seagull on a rock at sunset”. It catalogues and searches even very large RAW archives with an AI that runs only on your computer.</p>
+        <p class="hero-lead" data-i18n="hero_sub">Describe the photo you are looking for and OffGallery finds it: “night views of cities”. It catalogues and searches even very large RAW archives with an AI that runs only on your computer.</p>
         <ul class="hero-points" style="list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px;font-size:1.02rem;line-height:1.45"><li data-i18n="hero_p1"><strong>Search by meaning</strong>, not by keywords.</li><li data-i18n="hero_p2"><strong>Titles, tags, species and place</strong> generated automatically and written to XMP, compatible with Lightroom and darktable.</li><li data-i18n="hero_p3"><strong>No photo ever leaves your PC.</strong> Free, open source, no subscriptions, no account.</li></ul>
+        <figure class="hero-demo">
+          <video class="demo-video" data-demo src="../assets/video/search-demo.mp4" poster="../assets/video/search-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: semantic search in OffGallery"></video>
+        </figure>
       </div>
 
       <aside class="download-card" id="scarica">
@@ -1165,22 +1190,20 @@
           <span style="display:none"></span>
         </div>
         <div class="screenshot-small">
-          <img src="../assets/Processing.png" alt="OffGallery — Processing"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='none';" />
-          <span style="display:none"></span>
+          <video class="demo-video" data-demo src="../assets/video/processing-demo.mp4" poster="../assets/video/processing-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: Processing tab"></video>
         </div>
       </div>
       <div class="screenshot-row">
         <div class="screenshot-small">
-          <img src="../assets/Stat.png" alt="OffGallery — Statistics"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='none';" />
-          <span style="display:none"></span>
+          <video class="demo-video" data-demo src="../assets/video/stats-demo.mp4" poster="../assets/video/stats-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: archive statistics"></video>
         </div>
         <div class="screenshot-small">
-          <img src="../assets/Config.png" alt="OffGallery — Settings"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='none';" />
-          <span style="display:none"></span>
+          <video class="demo-video" data-demo src="../assets/video/config-demo.mp4" poster="../assets/video/config-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: configuration"></video>
         </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-small"><video class="demo-video" data-demo src="../assets/video/export-demo.mp4" poster="../assets/video/export-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: export"></video></div>
+        <div class="screenshot-small"><video class="demo-video contain" data-demo src="../assets/video/splash-demo.mp4" poster="../assets/video/splash-demo.jpg" muted loop playsinline preload="none" aria-label="App start-up: AI models loading locally"></video></div>
       </div>
     </div>
   </section>
@@ -1194,6 +1217,8 @@
         <h2 data-i18n="plug_title">Extend OffGallery with specialized modules.</h2>
         <p class="plugins-intro" data-i18n="plug_intro">Every plugin is auto-discovered at startup. Choose the LLM backend, activate only what you use — the others don't occupy VRAM.</p>
       </div>
+      <figure class="plugins-demo"><video class="demo-video" data-demo src="../assets/video/plugins-demo.mp4" poster="../assets/video/plugins-demo.jpg" muted loop playsinline preload="none" aria-label="Demo: OffGallery plugins"></video></figure>
+
       <div class="plugins-grid">
 
         <div class="plugin-card">
@@ -1366,7 +1391,7 @@
       nav_manual:       "Manuale", nav_credits: "Crediti",
       hero_eyebrow:     "",
       hero_title:       "Il tuo archivio.<br /><span class=\"accent\">La tua AI.</span><br />Zero cloud.",
-      hero_sub:         "Descrivi la foto che cerchi e OffGallery la trova: «gabbiano su uno scoglio al tramonto». Cataloga e ricerca archivi RAW anche molto grandi con un'AI che gira solo sul tuo computer.",
+      hero_sub:         "Descrivi la foto che cerchi e OffGallery la trova: «vedute notturne di città». Cataloga e ricerca archivi RAW anche molto grandi con un'AI che gira solo sul tuo computer.",
       hero_p1:          "<strong>Cerca per significato</strong>, non per parole chiave — anche in italiano.",
       hero_p2:          "<strong>Titoli, tag, specie e luogo</strong> generati in automatico e scritti in XMP, compatibili con Lightroom e darktable.",
       hero_p3:          "<strong>Nessuna foto lascia il tuo PC.</strong> Gratuito, open source, senza abbonamenti né account.",
@@ -1452,7 +1477,7 @@
       nav_manual:       "Manual", nav_credits: "Credits",
       hero_eyebrow:     "",
       hero_title:       "Your archive.<br /><span class=\"accent\">Your AI.</span><br />Zero cloud.",
-      hero_sub:         "Describe the photo you are looking for and OffGallery finds it: “seagull on a rock at sunset”. It catalogues and searches even very large RAW archives with an AI that runs only on your computer.",
+      hero_sub:         "Describe the photo you are looking for and OffGallery finds it: “night views of cities”. It catalogues and searches even very large RAW archives with an AI that runs only on your computer.",
       hero_p1:          "<strong>Search by meaning</strong>, not by keywords.",
       hero_p2:          "<strong>Titles, tags, species and place</strong> generated automatically and written to XMP, compatible with Lightroom and darktable.",
       hero_p3:          "<strong>No photo ever leaves your PC.</strong> Free, open source, no subscriptions, no account.",
@@ -1562,6 +1587,23 @@
   // il cambio lingua porta alla pagina equivalente (URL reale, indicizzabile)
 document.getElementById('langToggle').addEventListener('click', () => { window.location.href = '../'; });
 applyLang('en');
+</script>
+<script>
+/* clip dimostrative: partono solo quando sono visibili, in silenzio e in loop */
+(function () {
+  var vs = document.querySelectorAll('video[data-demo]');
+  if (!vs.length) return;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { vs.forEach(function (v) { v.controls = true; v.removeAttribute('loop'); }); return; }
+  if (!('IntersectionObserver' in window)) { vs.forEach(function (v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }); return; }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else { v.pause(); }
+    });
+  }, { threshold: 0.35 });
+  vs.forEach(function (v) { io.observe(v); });
+})();
 </script>
 </body>
 </html>
